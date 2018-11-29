@@ -5,14 +5,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/addyosmani/gulp-sort-media-optimaizer"
+    "url": "https://github.com/onilab-vladimir/gulp-sort-media-optimaizer"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/addyosmani/gulp-sort-media-optimaizer/issues"
+    "url": "https://github.com/onilab-vladimir/gulp-sort-media-optimaizer/issues"
   },
-  "homepage": "https://github.com/addyosmani/gulp-sort-media-optimaizer",
+  "homepage": "https://github.com/onilab-vladimir/gulp-sort-media-optimaizer",
   "dependencies": {
     "clean-up-string": "^2.0.0",
     "css-stringify": "^2.0.0",
