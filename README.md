@@ -20,7 +20,12 @@ Task `design.build` for below `style.css` file:
 	box-sizing: border-box;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 910px) {
+	.container {
+		margin: 0 auto;
+	}
+}
+@media (max-width: 910px) {
 	.container {
 		margin: 0 auto;
 	}
@@ -31,17 +36,27 @@ Produces following files:
 <table>
 	<tr>
 		<th>style.css</th>
+		<th>style_l.css</th>
 		<th>style_m.css</th>
 	</tr>
 	<tr>
 		<td><pre>* {
 	box-sizing: border-box;
 }</pre></td>
-<td><pre>@media (min-width: 640px) {
-.container {
-	margin: 0 auto;
+		<td><pre>
+@media (min-width: 910px) {
+	.container {
+		margin: 0 auto;
+	}
 }
-}</pre></td>
+</pre></td>
+<td><pre>
+@media (max-width: 910px) {
+	.container {
+		margin: 0 auto;
+	}
+}
+</pre></td>
 	</tr>
 </table>
 
