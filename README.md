@@ -30,22 +30,25 @@ Produces following files:
 
 <table>
 	<tr>
-		<th>style_l.css</th>
+		<th>style.css</th>
 		<th>style_m.css</th>
 	</tr>
 	<tr>
 		<td><pre>* {
 	box-sizing: border-box;
 }</pre></td>
-<td><pre>.container {
+<td><pre>@media (min-width: 640px) {
+.container {
 	margin: 0 auto;
+}
 }</pre></td>
 	</tr>
 </table>
 
 And now you can include it in your html in such way:
 ```html
-<link rel="stylesheet" type="text/css" href="style_l.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style_l.css" media="(max-width: 910px)" />
 <link rel="stylesheet" type="text/css" href="atyle_m.css" media="(min-width: 640px)" />
 ```
 
