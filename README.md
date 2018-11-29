@@ -1,4 +1,4 @@
-gulp-sort-media-optimaizer
+gulp-sort-media-optimizer
 --------------------------
 Plugin extracts css rules inside of media queries and saves it to separated files.
 
@@ -6,7 +6,7 @@ EXAMPLE
 -------
 ```js
 var gulp = require("gulp");
-var g = require("gulp-sort-media-optimaizer")();
+var g = require("gulp-sort-media-optimizer")();
 
 gulp.task("design.build", function() {
 	gulp.src("src/design/style.css")
