@@ -46,11 +46,7 @@ module.exports = function() {
                     }else if(value[1]==='max'){
                         num = convertSize(value[2],value[3]);
                         if(num > 910){
-                            if (pcStyleExist === 3 || pcStyleExist === 2) {
-                                return 2;
-                            }else {
-                                pcStyleExist = 1;
-                            }
+                            return 2;
                         }else if(num <= 910){
                             if (pcStyleExist !== 3 || pcStyleExist === 2){
                                 pcStyleExist = 3;
