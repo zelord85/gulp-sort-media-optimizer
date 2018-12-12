@@ -1,6 +1,6 @@
 {
   "name": "gulp-sort-media-optimizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gulp plugin. Sort media to PC and Mobile.",
   "main": "index.js",
   "repository": {
