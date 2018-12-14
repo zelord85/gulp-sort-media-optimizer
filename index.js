@@ -50,7 +50,7 @@ module.exports = function () {
                                     pcStyleExist = "DefOrPC";
                                 }
                             } else if (num <= 910) {
-                                if (pcStyleExist === "DefOrMob" || pcStyleExist === "") {
+                                if (pcStyleExist === "DefOrMob" || pcStyleExist === "" || pcStyleExist === "Mob") {
                                     pcStyleExist = "Mob";
                                 } else {
                                     pcStyleExist = "Def";
