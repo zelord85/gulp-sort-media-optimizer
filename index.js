@@ -45,11 +45,11 @@ module.exports = function () {
                             }
                         } else if (value[1] === 'max') {
                             num = convertSize(value[2], value[3]);
-                            if (num >= 910) {
+                            if (num > 910) {
                                 if (pcStyleExist !== "PC") {
                                     pcStyleExist = "DefOrPC";
                                 }
-                            } else if (num < 910) {
+                            } else if (num <= 910) {
                                 if (pcStyleExist === "DefOrMob" || pcStyleExist === "" || pcStyleExist === "Mob") {
                                     pcStyleExist = "Mob";
                                 } else {
