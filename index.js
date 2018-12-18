@@ -11,6 +11,7 @@ module.exports = function () {
     return through.obj(function (file, enc, callback) {
         var fileName = nameFile(file.path).name;
         var findCopy = /.*(_l|_m)$/;
+        if(fileName==="reset") return;
         if (findCopy.exec(fileName) == null) {
             var stream = this;
             var reworkData = rework(file.contents.toString())
