@@ -11,7 +11,7 @@ module.exports = function () {
     return through.obj(function (file, enc, callback) {
         var fileName = nameFile(file.path).name;
         var findCopy = /.*(_l|_m)$/;
-        if(fileName==="reset") return;
+        if(fileName !=="reset") {
         if (findCopy.exec(fileName) == null) {
             var stream = this;
             var reworkData = rework(file.contents.toString())
@@ -107,6 +107,7 @@ module.exports = function () {
             createFile(file, dirname(file.path), fileName, contentsDef);
             createFile(file, dirname(file.path), fileName + '_l', contentsPc);
             createFile(file, dirname(file.path), fileName + '_m', contentsMobile);
+        }
         }
         callback();
     });
