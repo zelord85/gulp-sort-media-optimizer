@@ -10,7 +10,7 @@ var g = require("gulp-sort-media-optimizer")();
 
 gulp.task("design.build", function() {
 	gulp.src("src/design/style.css")
-		.pipe(g.sortMediaOptimaizer())
+		.pipe(g.sortMediaOptimizer())
 		.pipe(gulp.dest("build"));
 });
 ```
